@@ -1,16 +1,27 @@
 hmk_02
 ================
 
-## Quarto
+``` r
+library("tidyverse")
+```
 
-Quarto enables you to weave together content and executable code into a
-finished document. To learn more about Quarto see <https://quarto.org>.
+    Warning: package 'tidyverse' was built under R version 4.2.1
 
-## Running Code
+    Warning: package 'ggplot2' was built under R version 4.2.1
 
-When you click the **Render** button a document will be generated that
-includes both content and the output of embedded code. You can embed
-code like this:
+    Warning: package 'tibble' was built under R version 4.2.1
+
+    Warning: package 'tidyr' was built under R version 4.2.1
+
+    Warning: package 'readr' was built under R version 4.2.1
+
+    Warning: package 'purrr' was built under R version 4.2.1
+
+    Warning: package 'dplyr' was built under R version 4.2.1
+
+    Warning: package 'stringr' was built under R version 4.2.1
+
+    Warning: package 'forcats' was built under R version 4.2.1
 
 ``` r
 a <- 25
@@ -23,10 +34,38 @@ a <= b
 ``` r
 a <- 25
 b <- 100
-a >=b
+a >= b
 ```
 
     [1] FALSE
+
+``` r
+ls()
+```
+
+    [1] "a" "b"
+
+``` r
+rm(list=ls())
+```
+
+    ::: {.cell}
+
+    :::
+
+    You can add options to executable code like this
+
+
+    ::: {.cell}
+    ::: {.cell-output .cell-output-stdout}
+
+\[1\] 4
+
+    :::
+    :::
+
+
+    The `echo: false` option disables the printing of code (only output is displayed).
 
 You can add options to executable code like this
 
