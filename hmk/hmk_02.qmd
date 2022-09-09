@@ -1,6 +1,6 @@
 ---
 title: "hmk_02"
-format: gfm
+format: html
 editor: visual
 ---
 
