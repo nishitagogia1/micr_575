@@ -10,7 +10,9 @@ Nishita Gogia
 library("tidyverse")
 ```
 
-## To check when object ‘b’ is greater or equal to object ‘a’
+## Question 2.1
+
+# To check when object ‘b’ is greater or equal to object ‘a’
 
 ``` r
 a <- 25
@@ -20,7 +22,9 @@ a <= b
 
     [1] TRUE
 
-## To check when object ‘a’ is greater or equal to object ‘b’
+## Question 2.2
+
+# To check when object ‘a’ is greater or equal to object ‘b’
 
 ``` r
 a <- 25
@@ -29,6 +33,10 @@ a >= b
 ```
 
     [1] FALSE
+
+## Question 3
+
+# showing list of the objects and then removal of the objects using rm function
 
 ``` r
 ls()
