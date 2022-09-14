@@ -1,27 +1,16 @@
 hmk_02
 ================
+Nishita Gogia
+
+## Question 1
+
+# Loading of the tidyverse package into a quarto document
 
 ``` r
 library("tidyverse")
 ```
 
-    Warning: package 'tidyverse' was built under R version 4.2.1
-
-    Warning: package 'ggplot2' was built under R version 4.2.1
-
-    Warning: package 'tibble' was built under R version 4.2.1
-
-    Warning: package 'tidyr' was built under R version 4.2.1
-
-    Warning: package 'readr' was built under R version 4.2.1
-
-    Warning: package 'purrr' was built under R version 4.2.1
-
-    Warning: package 'dplyr' was built under R version 4.2.1
-
-    Warning: package 'stringr' was built under R version 4.2.1
-
-    Warning: package 'forcats' was built under R version 4.2.1
+## To check when object ‘b’ is greater or equal to object ‘a’
 
 ``` r
 a <- 25
@@ -30,6 +19,8 @@ a <= b
 ```
 
     [1] TRUE
+
+## To check when object ‘a’ is greater or equal to object ‘b’
 
 ``` r
 a <- 25
@@ -48,28 +39,3 @@ ls()
 ``` r
 rm(list=ls())
 ```
-
-    ::: {.cell}
-
-    :::
-
-    You can add options to executable code like this
-
-
-    ::: {.cell}
-    ::: {.cell-output .cell-output-stdout}
-
-\[1\] 4
-
-    :::
-    :::
-
-
-    The `echo: false` option disables the printing of code (only output is displayed).
-
-You can add options to executable code like this
-
-    [1] 4
-
-The `echo: false` option disables the printing of code (only output is
-displayed).

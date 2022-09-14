@@ -1,14 +1,17 @@
 ---
 title: "hmk_02"
 format: gfm
+author: "Nishita Gogia"
 editor: visual
 ---
-
-
+## Question 1 
+# Loading of the tidyverse package into a quarto document
 
 ```{r, message=FALSE}
 library("tidyverse")
 ```
+
+## To check when object 'b' is greater or equal to object 'a'
 
 ```{r}
 a <- 25
@@ -16,37 +19,17 @@ b <- 100
 a <= b
 ```
 
+## To check when object 'a' is greater or equal to object 'b'
+
 ```{r}
 a <- 25
 b <- 100
 a >= b
 ```
+
 ```{r}
 ls()
 rm(list=ls())
 ```
-```
-```{r}
 
 
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
-
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
