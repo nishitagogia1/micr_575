@@ -1,0 +1,93 @@
+---
+title: "hmk_03"
+format: gfm
+editor: visual
+author: "nishita gogia"
+---
+
+## Loading the tidyverse library
+
+```{r, message=FALSE}
+library("tidyverse")
+```
+
+## Reading of the csv data file created in hmk folder
+
+```{r}
+experiment <- read_csv(file= "C:/Users/ngogia/Documents/classes_2022/micr_575/hmk/my_data.csv")
+```
+
+##Investigating the properties of data frames
+
+```{r}
+glimpse(experiment)
+```
+
+```{r}
+str(experiment)
+```
+
+I tried the function glimpse and str- in case of str it gives you very elaborate version of your file including the type of vector is used in particular column. Glimpse is very handy to check if you have loaded all the data you needed but it just reads only the data frame and not any object unlike the str feature. They both are equally good depending upon the circumstances you are using in.
+
+## Manipulating the data frames
+
+```{r}
+experiment$Change2 <- 2 / experiment$Foldchange
+glimpse(experiment)
+```
+
+## Calculating the mean of columns for original column and added column
+
+```{r}
+mean(experiment$Foldchange)
+```
+
+```{r}
+mean (experiment$Change2)
+```
+
+```{r}
+glimpse(experiment)
+```
+
+## Show what each of the following returns, and explain what each line of code is doing: - using read.csv function for loading the feline data
+
+```{r}
+cats <- read.csv (file = "C:/Users/ngogia/Documents/classes_2022/micr_575/hmk/feline_data.csv")
+```
+
+-   this function delineates the first row of the data along with its header
+
+```{r}
+cats[1]
+```
+
+-   this function just reads the contents of the first row without the header of the row
+
+```{r}
+cats[[1]]
+```
+
+-   this function delienates the contents of the header coat in the cats object
+
+```{r}
+cats$coat
+```
+
+-   this function reads the first row and column of the data frame
+
+```{r}
+cats[1, 1]
+```
+
+-   this function reads the contents of the first row without its header
+
+```{r}
+cats[ , 1]
+```
+
+-   this function calls for all the columns of the first row
+
+```{r}
+cats[1, ]
+```
