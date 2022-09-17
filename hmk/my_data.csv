@@ -1,0 +1,21 @@
+ID,log2.adipogenesisAvg,control Avg (log2),Foldchange,P-val,FDR P-val,Gene Symbol,Description
+207175_at,12.28,3.05,600.18,5.81E-07,0.0079,ADIPOQ,"adiponectin, C1Q and collagen domain containing"
+203548_s_at,11.69,2.71,502.98,0.0004,0.0715,LPL,lipoprotein lipase
+203980_at,13.18,4.49,412.7,7.73E-06,0.0235,FABP4,"fatty acid binding protein 4, adipocyte"
+235978_at,12.02,3.35,407.82,0.0029,0.1386,FABP4,"fatty acid binding protein 4, adipocyte"
+203549_s_at,11.89,3.47,342.93,0.0011,0.0972,LPL,lipoprotein lipase
+229476_s_at,10.56,2.95,196.15,5.90E-05,0.0358,THRSP,thyroid hormone responsive
+204894_s_at,10.15,2.96,146.11,3.30E-06,0.0167,AOC3,"amine oxidase, copper containing 3"
+211708_s_at,11.79,4.76,130.05,4.10E-06,0.0175,SCD,stearoyl-CoA desaturase (delta-9-desaturase)
+208383_s_at,9.14,2.42,105.28,9.08E-05,0.0424,PCK1,phosphoenolpyruvate carboxykinase 1 (soluble)
+229477_at,9.77,3.18,96.38,0.0003,0.0605,THRSP,thyroid hormone responsive
+230360_at,10.41,3.96,86.96,0.028,0.2484,GLDN,gliomedin
+43427_at,11.07,4.7,82.69,1.93E-05,0.0256,ACACB,acetyl-CoA carboxylase beta
+49452_at,11.22,4.89,80.49,1.38E-05,0.0252,ACACB,acetyl-CoA carboxylase beta
+206243_at,12.33,6.04,78.48,7.27E-06,0.0235,TIMP4,TIMP metallopeptidase inhibitor 4
+206697_s_at,10.92,4.66,76.69,5.15E-05,0.0351,HP,haptoglobin
+206488_s_at,10.29,4.05,75.25,0.0417,0.271,CD36,CD36 molecule (thrombospondin receptor)
+211162_x_at,11.26,5.05,73.78,6.13E-06,0.0223,SCD,stearoyl-CoA desaturase (delta-9-desaturase)
+208470_s_at,10.46,4.52,61.26,0.0003,0.0671,HP; HPR,haptoglobin; haptoglobin-related protein
+205913_at,10.47,4.63,57.33,0.0004,0.0712,PLIN1,perilipin 1
+204388_s_at,10.28,4.57,52.01,0.0003,0.0592,MAOA,monoamine oxidase A
