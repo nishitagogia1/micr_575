@@ -1,0 +1,53 @@
+---
+title: "hmk_04"
+format: gfm
+editor: visual
+---
+## loading of the tidyverse library
+```{r, message=FALSE}
+library(tidyverse)
+```
+## step1: reading of data file hmk directory
+## step 2: representation of pvalue in the form of tiles using geom_tile. the x axis represents the gene symbol and its corresponding p value plotted when the cells are differentited into adipocytes
+```{r}
+experiment <- read_csv(file = "C:/Users/ngogia/Documents/classes_2022/micr_575/hmk/my_data.csv")
+
+glimpse(experiment)
+z <- experiment$P.val
+
+plot1 <- ggplot(experiment) + 
+  geom_tile(aes(x = Gene.Symbol, y = adipogenesisAvg.log2, fill = z)) +
+  scale_fill_gradient(low="blue", high="red")
+
+print(plot1)
+
+
+```
+## To test whether I could change the shape of the tiles in the data which is described above. 
+```{r}
+plot2 <- ggplot(experiment) + 
+  geom_tile(aes(x = Gene.Symbol, y = adipogenesisAvg.log2, fill = z), 
+            width = 0.25 , height = 0.25) + 
+  scale_fill_gradient(low="blue", high="red")
+
+print(plot2)
+
+
+```
+## Representation of the above data in form of a violin plot.
+```{r}
+plot3 <- ggplot(experiment) + 
+  geom_violin(aes(x = Gene.Symbol, y = adipogenesisAvg.log2 ),
+                color = "green")
+
+print(plot3)
+
+```
+## using the geom_histogram to represent the data in the form of a histogram
+```{r}
+plot4 <- ggplot(experiment) +
+  geom_histogram(aes(y = adipogenesisAvg.log2), color = "purple")
+
+print(plot4)
+```
+
