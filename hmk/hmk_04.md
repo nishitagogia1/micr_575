@@ -51,7 +51,7 @@ print(plot1)
 
 ![](hmk_04_files/figure-gfm/unnamed-chunk-2-1.png)
 
-## To test whether I could change the shape of the tiles in the data which is described above.
+## To test whether I could change the shape of the tiles in the data which is described above. I think its the best way to plot the data since we can see the pvalue clearly represented for each of the gene during adipogenesis with the highest expression represented in the red color and the lower one in blue. The expression patterns in between are the gradients of colors of intermediate expression during adipogenesis.
 
 ``` r
 plot2 <- ggplot(experiment) + 
@@ -64,7 +64,7 @@ print(plot2)
 
 ![](hmk_04_files/figure-gfm/unnamed-chunk-3-1.png)
 
-## Representation of the above data in form of a violin plot.
+## Trying different representatiosn of the same data- Representation of the above data in form of a violin plot.
 
 ``` r
 plot3 <- ggplot(experiment) + 
@@ -87,7 +87,7 @@ print(plot3)
 
 ![](hmk_04_files/figure-gfm/unnamed-chunk-4-1.png)
 
-## using the geom_histogram to represent the data in the form of a histogram
+## using the geom_histogram to represent the data in the form of a histogram. I think using an histogram to plot the data is not a very informative way to represent this data since it just plots the expression log of the adipogensis event but not necessarily any information about the genes or the pvalue.
 
 ``` r
 plot4 <- ggplot(experiment) +
