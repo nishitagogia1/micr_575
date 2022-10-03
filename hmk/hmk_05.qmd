@@ -1,0 +1,48 @@
+---
+title: "hmk_05"
+format: gfm
+editor: visual
+---
+## installed the package `nycflights13`
+
+```{r, message=FALSE}
+library(tidyverse)
+library(nycflights13)
+```
+
+## Question 1: filtering
+
+```{r}
+nycflights13::airlines
+
+criteria1 <- filter(flights, origin=="LGA", day == 16, distance <= 2000)
+```
+
+```{r}
+ggplot(criteria1) +
+  geom_point(aes(x = air_time, y = distance ))
+```
+
+## Question 2: dealing with NAs
+
+```{r}
+nycflights13::airlines
+
+criteria2 <- filter(flights, !(is.na (air_time)), origin=="LGA", day == 16, distance <= 2000)
+```
+
+```{r}
+ggplot(criteria2) +
+  geom_point(aes(x = air_time, y = distance ))
+```
+
+## Question 3: adding columns
+
+```{r}
+criteria3 <- mutate(flights, speed = distance/air_time)
+```
+
+```{r}
+ggplot(criteria3) + 
+  geom_histogram(aes(x = speed))
+```
