@@ -1,0 +1,35 @@
+---
+title: "bad_plot"
+format: gfm
+editor: visual
+---
+
+## Description:
+
+1.  this plot defies the rule of thinking of the parameters before you plot and what you need to plot.
+2.  the colour scheme of the plot should be able to distinguish enough between the various points of the data which is missing in this plot.
+3.  the axis labels in a plot should be depicted in a clear way so that the reader understands the values which is hidden/not shown in this plot.
+4.  another important aspect of depicting a plot is thinking which geom would be appropriate for the data which in this case is point and does not solve the purpose for the data.
+
+```{r}
+library(tidyverse)
+
+glimpse(mpg)
+
+p1 <- ggplot(mpg, aes(x = displ, y = fl, group = cyl)) +
+  geom_point(aes(color=cyl), color = "grey") 
+
++
+  scale_fill_gradient(low="white", high="white")
+  
+  
+print(p1)
+
+
+p1 +
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+```
