@@ -1,0 +1,79 @@
+hmk_10
+================
+
+# Decisions
+
+Write a function that accepts the current time as a parameter and prints
+“Good morning”, “Good afternoon”, or “Good evening” depending on the
+time. It is fine for the time to be in numeric format (e.g., `2317` for
+11:17 pm).
+
+``` r
+library(tidyverse)
+
+clock <- function(time) {
+if(time >= 000 & time <= 1100) {
+  print ("Good morning!")
+} else if( time >= 1101& time <= 1600) {
+  print("Good afternoon!")
+} else if( time >= 1601 & time <= 2359) {
+  print ("Good evening")
+} else {
+   print("Joke is on you")
+}
+}
+
+time <- 2422
+clock(time)
+```
+
+    [1] "Joke is on you"
+
+This function (clock) takes the input as the military time and when that
+requirement is not fulfilled it gives you an error message.
+
+# Loops
+
+-   Write a `for` loops that calculates the mean of each column of
+    mtcars
+
+``` r
+  cars.means <- rep(NA, length(mtcars))
+for(i in seq_along(mtcars)) {
+  cars.means[i] <- mean(mtcars[ ,i])
+} 
+```
+
+-   Write a function (using a for loop) that calculates the mean of all
+    numeric columns of *any* data frame. This function should be able to
+    accept data frames with non-numeric columns.
+
+``` r
+num_mean <- function(df) {
+  calc.mean <- rep(NA, length(df))
+  for(i in seq_along(df)) {
+    if(is.numeric(df [ ,i])) {
+      calc.mean[i] <- mean(df [ ,i])
+    } else if (!is.numeric(df [ ,i])) {
+      calc.mean[i] <- NA 
+    } 
+  }
+  calc.mean
+}
+
+iris <- as.data.frame(iris)
+num_mean(iris)
+```
+
+    [1] 5.843333 3.057333 3.758000 1.199333       NA
+
+## Why not loops
+
+In R, we generally encourage people to use vectorized functions instead
+of `for` loops. According to [your
+textbook](https://r4ds.had.co.nz/iteration.html), what is better about
+vectorized functions?
+
+`For` loops are not easy to read and requires as extra step of
+initializing the results vector whereas vectorized functions have that
+built-in.
